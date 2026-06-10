@@ -1,0 +1,15 @@
+meta {
+  name: listar-eventos-admin
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/api/events
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{adminToken}}
+}

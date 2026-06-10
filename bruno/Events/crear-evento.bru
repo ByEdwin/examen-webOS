@@ -1,0 +1,30 @@
+meta {
+  name: crear-evento
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/api/events
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{adminToken}}
+}
+
+body:json {
+  {
+    "name": "Festival de Jazz",
+    "description": "Una noche de jazz con artistas internacionales",
+    "date": "2026-08-15T20:00:00Z",
+    "location": "Teatro Principal, CDMX",
+    "vipPrice": 3000,
+    "vipQuantity": 50,
+    "preferentePrice": 1800,
+    "preferenteQuantity": 100,
+    "generalPrice": 900,
+    "generalQuantity": 200
+  }
+}

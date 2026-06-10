@@ -1,0 +1,21 @@
+meta {
+  name: comprar-boletos
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/api/public/purchase
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "eventId": 1,
+    "ticketZoneId": 1,
+    "buyerName": "Juan Pérez",
+    "buyerEmail": "juan@email.com",
+    "quantity": 2
+  }
+}
