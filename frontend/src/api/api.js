@@ -2,9 +2,9 @@
 // Creo una instancia con la URL base y manejo automático del token JWT
 import axios from 'axios';
 
-// Creo la instancia de axios apuntando a mi API que corre en el puerto 5173 del backend
+// Creo la instancia de axios apuntando a mi API que corre en el puerto 5223 del backend
 const api = axios.create({
-  baseURL: 'http://localhost:5062/api', // Puerto por defecto de mi API .NET
+  baseURL: 'http://localhost:5223/api', // Puerto por defecto de mi API .NET
 });
 
 // Interceptor: antes de cada petición, agrego el token JWT si existe
